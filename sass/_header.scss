@@ -1,0 +1,169 @@
+.header {
+  margin-bottom: 120px;
+  position: relative;
+  button {
+    @include button(137, 40);
+  }
+  .bg-header {
+    z-index: -3;
+    position: absolute;
+    right: 0px;
+    top: -23px;
+  }
+  a {
+    color: $soft-black;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .nav {
+    margin-top: 23px;
+  }
+  .logo-name {
+    position: relative;
+    .name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      /* identical to box height */
+      letter-spacing: 0.25em;
+      margin-left: 8px;
+    }
+    a:hover {
+      color: $soft-black;
+    }
+  }
+  .nav-items {
+    position: relative;
+    ul {
+      margin: auto;
+    }
+    li {
+      display: inline;
+      margin-right: 48px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      a:hover {
+        color: $gold;
+        font-weight: bold;
+      }
+      .btn-sign-up {
+        padding: 9px 35px;
+        background-color: transparent;
+        border: 1px solid $soft-black;
+        color: $soft-black;
+        font-weight: normal;
+        transition: 0.5s;
+      }
+      .btn-sign-up:hover {
+        background-color: $soft-black;
+        color: white;
+      }
+    }
+    li:nth-child(6) {
+      margin-right: 0px;
+    }
+    .menu {
+      display: none;
+      font-size: 30px;
+
+      float: right;
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  .bg-banner1 {
+    z-index: -2;
+    position: absolute;
+    right: 248px;
+    top: 320px;
+  }
+  .bg-banner2 {
+    z-index: -1;
+    position: absolute;
+    right: 0px;
+    top: 85px;
+  }
+  .content {
+    padding: 137px 0 207px 0;
+    h2 {
+      font-weight: normal;
+      max-width: 504px;
+      font-size: 36px;
+      line-height: 49px;
+    }
+    h1 {
+      max-width: 504px;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 98px;
+      margin: 16px 0;
+    }
+    .btn-explore:hover {
+      @include button-hover(white, $gold);
+    }
+  }
+}
+// reponsive
+@media (max-width: 768px) {
+  .header {
+    .nav-items {
+      li:nth-child(-n + 6) {
+        display: none;
+      }
+      .menu {
+        display: inline;
+      }
+    }
+  }
+  .banner {
+    .bg-banner2 {
+      top: 240px;
+      width: 60%;
+    }
+  }
+}
+@media (max-width: 36rem) {
+  .bg-banner1,
+  .bg-banner2 {
+    display: none;
+  }
+  .content {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    .nav-items.responsive {
+      position: relative;
+      .menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0;
+      }
+      li {
+        display: block;
+        text-align: left;
+        margin-right: 0px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    .nav-items {
+      li {
+        margin-right: 30px;
+        .btn-sign-up {
+          padding: 0 2px;
+        }
+      }
+    }
+  }
+}

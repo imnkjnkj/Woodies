@@ -1,0 +1,26 @@
+.how-it-works {
+  margin-bottom: 120px;
+}
+.title {
+  @include title(58px);
+}
+.content-how {
+  text-align: center;
+  span {
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 131px;
+    /* identical to box height */
+    color: $pink;
+    text-align: center;
+  }
+  h4 {
+    margin-top: 24px;
+    text-align: center;
+  }
+  .btn-get {
+    @include button(230px, 50px);
+
+    margin-top: 64px;
+  }
+}

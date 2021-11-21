@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1;
+  color: $soft-black;
+}
+
+a {
+  text-decoration: none;
+  color: $soft-black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: $soft-black;
+}
+body {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1;
+  color: $soft-black;
+}
+
+a {
+  text-decoration: none;
+  color: $soft-black;
+}
+hr {
+  width: 373px;
+  height: 1px;
+}
+@media (max-width: 36rem) {
+  hr {
+    display: none;
+  }
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1;
+  color: $soft-black;
+}

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+// font-family: 'Nunito', sans-serif;
+$font: "Nunito", sans-serif;
+$soft-black: #3e3f43;
+$pink: rgba(249, 189, 189, 0.25);
+$yellow: #ffc107;
+$yellow-light: #f7dea6;
+$blue: #a8dcec;
+$gold: #daa520;
+$gray: #c4c4c4;
+$gray-light: #e5e5e5;
+$gray-dark: #8d8d8d;
+$overlay-color: rgba(34, 34, 34, 0.1);
+$footer-bg-color: #efefef;
+
+@mixin button($w, $h) {
+  background: $gold;
+  border-radius: 4px;
+  border-width: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 24px;
+  width: $w;
+  height: $h;
+  color: #ffffff;
+  transition: 0.2s;
+  outline: none;
+}
+@mixin button-hover($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: 1px solid $text-color;
+  outline: none;
+}
+
+@mixin title($font-size) {
+  hr {
+    width: 373px;
+    height: 1px;
+    margin: 0 0 0 14px !important;
+  }
+  margin-bottom: 40px;
+  img {
+    margin-right: 8px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: $font-size;
+    line-height: 98px;
+    color: $overlay-color;
+  }
+}

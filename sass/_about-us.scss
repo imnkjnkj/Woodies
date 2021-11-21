@@ -1,0 +1,54 @@
+.about-us {
+  margin-bottom: 120px;
+}
+.title {
+  @include title(72px);
+}
+.content-about-us {
+  position: relative;
+  .bg-ab1 {
+    z-index: -3;
+    position: absolute;
+  }
+  .bg-ab2 {
+    z-index: -2;
+    margin-top: 82px;
+    margin-left: 38px;
+  }
+  .bg-ab3 {
+    z-index: -1;
+    position: absolute;
+    top: 254px;
+    left: -200px;
+  }
+  .text {
+    margin-top: 104px;
+    margin-bottom: 144px;
+  }
+  h2 {
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+@media (max-width: 36rem) {
+  .content-about-us {
+    .bg-ab1,
+    .bg-ab3 {
+      display: none;
+    }
+    .bg-ab2 {
+      margin: 0;
+    }
+    .text {
+      margin-top: 0;
+    }
+  }
+}

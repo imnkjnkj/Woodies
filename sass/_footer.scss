@@ -1,0 +1,105 @@
+.footer {
+  position: relative;
+  background-color: $footer-bg-color;
+
+  hr {
+    width: 100%;
+  }
+  .bg-footer {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .up-content {
+    padding: 52px 7px;
+    margin-bottom: 34px;
+    .input-group {
+      width: 448px;
+      height: 40px;
+      text-align: right;
+    }
+    input {
+      background: #ffffff;
+      border: 1px solid #daa520;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+    input:focus {
+      box-shadow: 0 0 0 0.25rem #daa52066;
+      border-color: $gold;
+    }
+    button {
+      @include button(120px, 40px);
+      padding: 0;
+    }
+    button:hover {
+      @include button-hover(white, $gold);
+    }
+    h4 {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .bottom-content .bot-content-item {
+    z-index: 1;
+    margin: 24px 105px 45px 0;
+    .logo-name .name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      color: $soft-black;
+      /* identical to box height */
+      margin-left: 8px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+    h6 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: $soft-black;
+      margin-bottom: 16px;
+    }
+    p {
+      color: $gray-dark;
+      margin-bottom: 16px;
+    }
+    a {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: $gray-dark;
+      margin-bottom: 16px;
+      text-decoration: none;
+      display: block;
+    }
+  }
+  .coppy-write {
+    margin: 45px 0 0 0;
+    padding-bottom: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: $gray-dark;
+    text-align: center;
+  }
+}
+
+@media (max-width: 36rem) {
+  .footer {
+    .bottom-content {
+      flex-direction: column;
+    }
+    .bottom-content .bot-content-item {
+      margin: 24px 52px 24px 0;
+    }
+    .bg-footer {
+      display: none;
+    }
+  }
+}
