@@ -20,7 +20,9 @@
   }
   .btn-get {
     @include button(230px, 50px);
-
     margin-top: 64px;
+  }
+  .btn-get:hover {
+    @include button-hover(white, $gold);
   }
 }

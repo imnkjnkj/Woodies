@@ -6,3 +6,7 @@ function myFunction() {
       x.className = "nav-items";
     }
   }
+  ScrollReveal().reveal('.header');
+  ScrollReveal().reveal('.about-us');
+  ScrollReveal().reveal('.how-it-works');
+  ScrollReveal().reveal('.footer');

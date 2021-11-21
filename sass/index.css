@@ -426,6 +426,13 @@ body {
   margin-top: 64px;
 }
 
+.content-how .btn-get:hover {
+  background-color: white;
+  color: #daa520;
+  border: 1px solid #daa520;
+  outline: none;
+}
+
 .footer {
   position: relative;
   background-color: #efefef;
